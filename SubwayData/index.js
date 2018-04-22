@@ -100,6 +100,7 @@ function getGeoJson(params) {
             pointObj.geometry.coordinates = gcj02towgs84;
             pointObj.properties.name = station.n;
             pointObj.properties.index = index2;
+            pointObj.properties.isTransfer = station.t === "1" //是否换乘站
             console.log(line.ls)
 
             let sl = _obj_info["l"].filter(p => p.ls === line.ls)[0]["st"][index2];

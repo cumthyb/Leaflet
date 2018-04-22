@@ -1,0 +1,13 @@
+#mapid {
+    height: 800px;
+}
+
+.station-info {
+    border-collapse: collapse;
+}
+
+.station-info,
+.station-info th,
+.station-info td {
+    border: 1px solid black;
+}
