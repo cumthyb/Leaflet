@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="85e25598-39a1-4e64-bbc0-62ba562036ce" name="Tomcat" url="http://localhost:8080/Leaflet/BeijingSubway">
+        <fileTransfer port="0" mountedRoot="E:\Program Files\Apache Software Foundation\Tomcat 9.0\webapps\Leaflet" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>

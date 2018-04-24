@@ -92,12 +92,13 @@ function getGeoJson(params) {
             let coordStr = station.sl.split(',');
             let coord = [coordStr[0] - 0, coordStr[1] - 0];
 
-            gcj02towgs84 = coordtransform.gcj02towgs84(coord[0], coord[1]);
+            lineObj.geometry.coordinates.push(coord)
+                // gcj02towgs84 = coordtransform.gcj02towgs84(coord[0], coord[1]);
 
-            lineObj.geometry.coordinates.push(gcj02towgs84);
+            // lineObj.geometry.coordinates.push(gcj02towgs84);
 
             let pointObj = getPointJson();
-            pointObj.geometry.coordinates = gcj02towgs84;
+            pointObj.geometry.coordinates = coord;
             pointObj.properties.name = station.n;
             pointObj.properties.index = index2;
             pointObj.properties.isTransfer = station.t === "1" //是否换乘站
